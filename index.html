@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');</style>
+</head>
+<header class ="noselect">
+    <h1>Sudoku</h1>
+    <div id="setup-game">
+        <div id="diff">
+            <h2 class ="noselect">Difficulty:</h2>
+            <label><input id="diff-easy"   type="radio" name="diff" value="easy" checked>Easy</label>
+            <label><input id="diff-medium" type="radio" name="diff" value="medium">Medium</label>
+            <label><input id="diff-hard"   type="radio" name="diff" value="hard">Hard</label>
+        </div>
+    </div>
+    <button id="start-btn">Create New Game!</button>
+</header>
+<body class ="noselect">
+    <div id="stats">
+        <p id="timer"></p>
+    </div>
+    <div id="game">
+        <div id="board" class="hidden" class ="noselect"></div>
+        <div id="number-container" class ="noselect" class="hidden">
+            <p id="one"   class="hidden">1</p>
+            <p id="two"   class="hidden">2</p>
+            <p id="three" class="hidden">3</p>
+            <p id="four"  class="hidden">4</p>
+            <p id="five"  class="hidden">5</p>
+            <p id="six"   class="hidden">6</p>
+            <p id="seven" class="hidden">7</p>
+            <p id="eight" class="hidden">8</p>
+            <p id="nine"  class="hidden">9</p>
+        </div>
+        <div id="game-buttons-container" class="hidden" class ="noselect">
+            <p id="delete-btn">Delete</p>
+            <p id="undo-btn" class="left-half">Undo</p>
+            <p id="redo-btn" class="right-half">Redo</p>
+            <p id="check-btn">Check</p>
+            <p id="restart-btn">Restart</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+<footer class="hidden" class ="noselect">
+    <p>Made by Tyler Sutton</p>
+</footer>
+</html>
